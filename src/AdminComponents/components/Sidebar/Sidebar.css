@@ -1,0 +1,191 @@
+/* html,body{
+    height: 100vh;
+} */
+body{
+    font-size: 16px;
+}
+.sidebar{
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'BYekan';
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+    background-color: rgba(22, 22, 22, 1);
+    /* height: 100%; */
+    overflow: auto;
+    padding: 1em;
+}
+.sidebar-item{
+    padding: .75em 1em;
+    display: block;
+    transition: background-color .15s;
+    cursor: pointer;
+}
+.sidebar-item:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
+.sidebar-title{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+}
+.sidebar-title span .sideBarIcon{
+    display: inline-block;
+    width: 1.5em;
+}
+.sidebar-content{
+    padding-top: .25em;
+    text-align: right;
+    height: 0;
+    overflow: hidden;
+}
+.sidebar-item.open > .sidebar-content{
+    height: auto;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn{
+    transform: rotate(180deg);
+}
+.activeSidebar-item{
+    background-color: rgb(140, 142, 10);
+    padding: .5em;
+    border-radius: 2px;
+}
+
+.sideBarIcon{
+    margin-left: 5px;
+}
+.sidebarAdminPanel:hover .sideBarIcon{
+    font-size: 18px;
+    animation-name: sideBarIcon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: #fff;
+}
+@keyframes sideBarIcon {
+    0%{transform: rotateZ(-10deg);}
+    25%{transform: rotateZ(10deg);}
+    50%{transform: rotateZ(-10deg);}
+    75%{transform: rotateZ(10deg);}
+    100%{transform: rotateZ(-10deg);}
+}
+.downSidebar{
+    font-size: 10px;
+    margin-right: 5px;
+}
+.show{
+    display: block;
+    padding-top: 10px;
+}
+.hidden{
+    display: none;
+}
+.adminPanel{
+    background-color: #2d2e2f;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.updateInfoAdmin{
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    text-align: right;
+
+}
+.sidebarAdminPanel:hover{
+    color: #fff;
+}
+.panelOptionAdmin:hover{
+    
+    cursor: pointer;
+}
+.nameAdmin{
+    background-color: rgb(31, 30, 30);
+}
+.picturePanel-admin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picturePanel-admin img{
+    width: 50px;
+    height: 50px;
+}
+@media (min-width:400px) {
+    .sidebar{
+        opacity: 0;
+    }
+    .sidebar{
+        position: fixed;
+        left: -100%;
+        transition: all .5s;
+    }
+    .sidebar.active{
+        left: 0;
+        opacity: 1;
+    }
+    .selectAdmin{
+        text-align: right;
+        background-color: #69e6e6;
+    }
+}
+@media (min-width:768px) {
+    .sidebar{
+        transition: 0.5s ease-in-out;
+        left: 0;
+        position: relative;
+    }
+    .picturePanel img {
+        width: 100%;
+    }
+    .sidebar{
+        opacity: 1;
+    }
+    .sideBarIcon{
+        margin-left: 3px;
+    }
+    .sidebarAdminPanel{
+        font-size: 12px;
+    }
+    .detailSidebarAdmin{
+        font-size: 10px;
+    }
+    .sidebarAdminPanel:hover .sideBarIcon{
+        font-size: 12px;
+    }
+    .sidebar-item {
+        padding: 0.75em 0;
+        font-size: 14px;
+    }
+}
+@media (min-width:992px) {
+    .selectAdmin{
+        background-color: #fff;
+    }
+    .sidebarAdminPanel{
+        font-size: 16px;
+    }
+    .detailSidebarAdmin{
+        font-size: 14px;
+        padding: 3px;
+    }
+    .sidebarAdminPanel:hover .sideBarIcon{
+        font-size: 16px;
+    }
+    .sidebar-item {
+        padding: 0.75em 1em;
+        font-size: 16px;
+    }
+}

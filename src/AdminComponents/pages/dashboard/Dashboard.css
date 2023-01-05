@@ -1,0 +1,57 @@
+.updateInformationAdmin{
+    background-color: #14ea3e;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.updateAdmin{
+    width: 15%;
+    margin-top: 30px;
+    background-color: #14ea3e;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+.update:hover{
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+}
+.userInformation{
+    padding: 30px;
+}
+.typeFormPanel{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #dbd6d6;
+    transition: 0.5s all ease-in-out;
+}
+.typeFormPanel:hover{
+    transform: scale(1.01);
+    border: 1px solid #41AFE6;
+    cursor: pointer;
+}
+@media (min-width:400px) {
+    .updateAdmin{
+        width: 100%;
+    }
+    .update{
+        width: 100%;
+    }
+}
+@media (min-width:992px) {
+    .updateAdmin{
+        width: 15%;
+    }
+    .update{
+        width: 20%;
+    }
+}
+@media (min-width:1200px) {
+    .update{
+        width: 15%;
+    }
+}

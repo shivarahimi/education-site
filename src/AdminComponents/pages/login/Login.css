@@ -1,0 +1,140 @@
+
+.containerLogin{
+    font-family: "BYekan";
+    width: 50%;
+    margin: 150px auto;
+    background-color: rgb(228, 236, 248);
+  }
+  .message{
+    color: red;
+    font-size: 12px;
+    direction: rtl;
+  }
+  .page{
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 2px 3px 10px 1px #ccc;
+  }
+  .Loginpicture{
+    width: 360px;
+    height: 60vh;
+  }
+  .Loginpicture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    opacity: 90%;
+  }
+  .title{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #form{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  #email,#password{
+    margin-bottom: 13px;
+  }
+  #form .typeForm{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #dbd6d6;
+    transition: 0.5s all ease-in-out;
+  }
+  #form .typeForm:hover{
+    transform: scale(1.01);
+    border: 1px solid #41AFE6;
+    cursor: pointer;
+  }
+  .remember{
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .forget{
+    color: black;
+  }
+  .tik{
+    color: #7A7676;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .login{
+    margin-bottom: 10px;
+  }
+  #sendBtn{
+    width: 100%;
+    border: none;
+    background-color: #41AFE6;
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #ccc;
+    font-size: 16px;
+    font-family: "BYekan";
+  }
+  .register{
+    text-align: center;
+  }
+  .reg{
+    font-size: 13px;
+    color: #41AFE6;
+  }
+  @media (min-width:400px) {
+    .containerLogin{
+    width: 90%;
+    }
+    .Loginpicture{
+    width: 100%;
+    }
+    .Loginpicture img {
+      height: 89%;
+      border-radius: 25px 25px 0 0;
+    }
+    .register {
+      margin-bottom: 20px;
+    }
+  }
+  @media (min-width:576px) {
+    .Loginpicture img {
+    height: 89%;
+    border-radius: 25px 25px 0 0;
+    }
+    #sendBtn {
+    padding: 10px;
+    font-size: 14px;
+    }
+    .title {
+    margin-bottom: 40px;
+    }
+    .username,.remember{
+    margin-bottom: 30px;
+    }
+    .register {
+    margin-bottom: 20px;
+    }
+  }
+  @media (min-width:768px) {
+    .containerLogin{
+      width: 50%;
+    }
+  }
+  @media (min-width:1200px) {
+    .Loginpicture{
+      width: 50%;
+    }
+    .Loginpicture img {
+      height: 100%;
+      border-radius: 25px 0 0 25px;
+    }
+  }
+  @media (min-width:1400px) {
+    .Loginpicture img {
+      height: 100%;
+      border-radius: 25px 0 0 25px;
+    }
+  }

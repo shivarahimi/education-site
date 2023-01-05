@@ -1,0 +1,44 @@
+.storyShop{
+    margin-top: 120px;
+    margin-bottom: 25px;
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: right;
+    direction: rtl;
+}
+.storyShop-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.finallshop-btn{
+    width: 100%;
+    background-color: red;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+.storyShop-i{
+    font-size: 14px;
+    color: #575555;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+@media (min-width:400px) {
+    .storyShop{
+        margin-top: 0;
+    }
+}
+@media (min-width:768px) {
+    .storyShop{
+        margin-top: 120px;
+    }
+}

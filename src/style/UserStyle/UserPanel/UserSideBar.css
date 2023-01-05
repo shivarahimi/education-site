@@ -1,0 +1,98 @@
+.sidebar{
+    margin-top: 20px;
+    font-family: 'BYekan';
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+}
+.userSidebarIcon{
+    margin-left: 5px;
+}
+.userPanel{
+    background-color: #1471EA;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    text-align: right;
+}
+.panelOption{
+    padding: .75em 1em;
+}
+.panelOption:hover{
+    color: #1471EA;
+    cursor: pointer;
+}
+.picturePanel{
+    width: 50%;
+    height: 50%;
+}
+.picturePanel img{
+    width: 150px;
+    height: 150px;
+}
+@media (min-width:400px) {
+    .sidebar{
+        opacity: 0;
+    }
+    .sidebar{
+        position: fixed;
+        left: -100%;
+        transition: all .5s;
+    }
+    .sidebar.active{
+        left: 0;
+        opacity: 1;
+    }
+    .picturePanel img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (min-width:768px) {
+    .sidebar{
+        transition: 0.5s ease-in-out;
+        left: 0;
+        position: relative;
+    }
+    .userSidebarIcon{
+        margin-left: 3px;
+    }
+    .sidebar{
+        opacity: 1;
+    }
+    .panelOption{
+        padding: 0.75em 0;
+        font-size: 10px;
+    }
+    .userPanel {
+        font-size: 14px;
+    }
+}
+@media (min-width:992px) {
+    .userPanel {
+        font-size: 16px;
+    }
+    .picturePanel img{
+        width: 150px;
+        height: 150px;
+    }
+    .userSidebarIcon{
+        margin-left: 5px;
+    }
+    .panelOption{
+        font-size: 16px;
+    }
+}
+@media (min-width:1200px) {
+    .panelOption{
+        padding: 0.75em 1em;
+    } 
+}

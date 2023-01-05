@@ -1,0 +1,157 @@
+.introduction{
+    margin-top: 100px;
+    text-align: right;
+    font-family: 'BYekan';
+}
+.singleCourse{
+    margin-bottom: 25px;
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+}
+.single{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single img{
+    margin-top: 20px;
+    width: 40%;
+    height: 40%;
+    border-radius: 5px 5px 0 0;
+}
+.singleInformation{
+    padding: 15px;
+}
+.txt{
+    color: rgb(71, 71, 71);
+    line-height: 1.5;
+}
+.dore{
+    padding: 15px;
+}
+.detail{
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.detail:hover{
+    transform: scale(1.01);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.like{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+}
+.dislike{
+    margin-left: 15px;
+}
+
+.pictureCoursepage img{
+    border-radius: 50%;
+    width: 50%;
+    height: 20%;
+}
+
+.teacher{
+    margin-top: 110px;
+    text-align: right;
+    font-family: 'BYekan';
+}
+.information{
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.receive{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #1471EA;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+.not-receive{
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(161, 159, 159);
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+.teacherDetails{
+    box-shadow: 2px 3px 10px 1px #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.userCoursePage{
+    width: 50%;
+    height: 50%;
+}
+.userCoursePage img{
+    width: 200px;
+    height: 200px;
+}
+@media (min-width:400px) {
+    .introduction{
+        margin-top: 50px;
+    }
+    .courseId{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .txt{
+        font-size: 14px;
+    }
+    .pictureCoursepage img {
+        width: 150px;
+        height: 160px;
+    }
+}
+@media (min-width:768px) {
+    .introduction{
+        margin-top: 110px;
+    }
+    .courseId{
+        display: flex;
+        flex-direction: row;
+    }
+    .userCoursePage img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media (min-width:1200px) {
+    .txt{
+        font-size: 16px;
+    }
+    .pictureCoursepage img {
+        width: 50%;
+        height: 20%;
+    }
+    .userCoursePage img{
+        width: 200px;
+        height: 200px;
+    }
+}

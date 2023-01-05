@@ -1,0 +1,41 @@
+.navbarUser{
+    font-family: 'BYekan';
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 0 0 10px 10px;
+}
+.responsiveUserpanel{
+    display: none;
+}
+.hamburgerUser{
+    font-size: 25px;
+    color: rgb(103, 103, 253);
+    cursor: pointer;
+}
+.homeUser{
+    font-size: 25px;
+    animation-name: homeUser;
+    animation-duration: 0.7s;
+    animation-iteration-count:infinite;
+    color: rgb(103, 103, 253);
+}
+@keyframes homeUser {
+    0%{transform: rotateZ(-10deg);}
+    25%{transform: rotateZ(10deg);}
+    50%{transform: rotateZ(-10deg);}
+    75%{transform: rotateZ(10deg);}
+    100%{transform: rotateZ(-10deg);}
+}
+@media (min-width:400px) {
+    .responsiveUserpanel{
+    display: block;
+    }
+}
+@media (min-width:768px) {
+    .responsiveUserpanel{
+    display: none;
+    }
+}

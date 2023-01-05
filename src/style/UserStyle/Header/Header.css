@@ -1,0 +1,250 @@
+header{
+    width: 100%;
+    display: flex;
+    direction: rtl;
+    position: fixed;
+    background-color: #fff;
+    z-index: 1000;
+}
+.dropdownHeader{
+    position: relative;
+}
+.dropdown-menuHeader{
+    position: absolute;
+    height: 210px;
+    top: calc(100% + 0);
+    left: 0;
+    background-color: white;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0;
+    transform: translateY(-5px);
+    transition: opacity 150ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.drop-item{
+    padding: .5rem;
+    cursor: pointer;
+}
+.drop-item:hover{
+    background-color: rgb(179, 219, 219);
+    border-radius: 5px;
+}
+.dropdownHeader .dropdown-menuHeader:hover{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdownHeader > .linkHeader:hover + .dropdown-menuHeader{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+header .logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+}
+.item-count{
+    position: absolute;
+    background-color: red;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    z-index: 10;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 100%;
+}
+header .logo .star{
+    width: 120px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.response{
+    display: none;
+}
+.hamburger{
+    font-size: 25px;
+    display: none;
+}
+.responsive-navigation{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+header .navbar-nav .nav-link{
+    padding: 20px 15px;
+}
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'BYekan';
+}
+.nav-item{
+    margin-left: 10px;
+    
+}
+.nav-link{
+    display: block;
+    color: #000;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    transition: all 1.5s;
+}
+.search-bar.active{
+    width: 0px;
+}
+.magnifier{
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 19px;
+    top: 2px;
+    left: 9px;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    margin: 3px 10px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    transition: all 1s;
+    /* transition-delay: 0.5s; */
+    padding-right: 15px;
+}
+.noThing{
+    display: none;
+}
+.searchResult{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+    background-color: #fdffff;
+    border-radius: 0 0 5px 5px;
+    display: block;
+}
+.searchCourse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.input.active{
+    width: 0;
+}
+.shopping{
+    display: flex;
+    justify-content: flex-end;
+}
+.shoppingcart{
+    margin-left: 25px;
+    cursor: pointer;
+}
+.user{
+    margin-left: 55px;
+}
+
+@media (min-width:400px) {
+    .response{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger{
+        display: block;
+    }
+    header .logo .star{
+        display: none;
+    }
+    .navbar{
+        padding: 10px;
+    }
+    .responsive-navigation{
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        top: 45px;
+        left: -100%;
+        text-align: center;
+        background: #fff;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    .responsive-navigation.active{
+        left: 0;
+    }
+    .input{
+        margin: 0;
+    }
+    .search-bar{
+        width: 250px;
+    }
+    .open{
+        top: 65px;
+        right: 140px;
+    }
+
+}
+@media (min-width:768px) {
+    .main{
+        justify-content: flex-end;
+    }
+    .search-bar{
+        width: 300px;
+    }
+}
+@media (min-width:992px) {
+    .navbar{
+        padding: 25px;
+    }
+    .responsive-navigation{
+        top: 55px;
+    }
+
+}
+@media (min-width:1200px) {
+    .open{
+        top: 20px;
+        right: 62px;
+    }
+    header .logo .star{
+        display: block;
+    }
+    .response{
+        display: none;
+    }
+    .responsive-navigation{
+        height: 0;
+        transition: 0.5s ease-in-out;
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        flex-direction: row;
+        position: static;
+    }
+}

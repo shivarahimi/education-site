@@ -1,0 +1,10 @@
+.notFound{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 37, 9);
+    margin-top: 250px;
+    font-family: "BYekan";
+}

@@ -1,0 +1,25 @@
+.addStudent{
+    font-family: 'BYekan';
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.addstudentAdmin{
+    width: 20%;
+    margin-top: 30px;
+    background-color: #208783;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+}
+.addstudentAdmin:hover{
+    transform: scale(0.9);
+    transition: 0.5s ease-in-out;
+}

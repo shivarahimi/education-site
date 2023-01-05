@@ -1,0 +1,45 @@
+.Newspage{
+    font-family: 'BYekan';
+    text-align: right;
+}
+.lastNews{
+    background-color: #1471EA;
+    padding: 8px;
+    border-radius: 10px;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+}
+.leftNews,.rightNews{
+    box-shadow: 2px 3px 10px 1px rgb(164, 160, 230);
+    border-radius: 5px;
+    margin: 120px 0 50px;
+}
+.rightNews{
+    padding: 15px;
+}
+.bgNewspage{
+    padding: 10px;
+}
+.bgNewspage:hover{
+    background-color: rgb(247, 247, 248);
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (min-width:400px) {
+    .rightNews{
+        margin-top: 50px;
+    }
+    .leftNews{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:768px) {
+    .rightNews{
+        margin-top: 120px;
+    }
+    .leftNews{
+        margin-bottom: 50px;
+    }
+}

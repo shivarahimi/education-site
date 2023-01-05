@@ -1,0 +1,133 @@
+.titleNews{
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.news{
+    margin-top: 80px;
+    font-family: 'BYekan';
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.new{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.text{
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    direction: rtl;
+}
+.new:hover{
+    transform: scale(1.01);
+    transition:all 0.5s ease;
+}
+.newspic{
+    height: 100%;
+}
+.newspic img{
+    width: 200px;
+    border-radius: 50% 0 50% 50%;
+}
+.allnews{
+    width: 12%;
+    margin-top: 30px;
+    border: 2px solid #1471EA;
+    color: #1471EA;
+    border-radius: 30px;
+    padding: 5px;
+}
+.allnews:hover{
+    transform: scale(0.95);
+    transition: 0.5s ease-in-out;
+}
+.allnewsArrow{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #1471EA;
+}
+@media (min-width:400px) {
+    .summery{
+        margin-top: 15px;
+    }
+    .news{
+        margin-top: 60px;
+    }
+    .new{
+        flex-direction: column-reverse;
+    }
+    .text{
+        width: 290px;
+        font-size: 14px;
+    }
+    .newspic img{
+        width: 180px;
+        margin-bottom: 30px;
+    }
+    .allnews{
+        width: 25%;
+        font-size: 15px;
+    }
+}
+@media (min-width:576px) {
+    .text{
+        width: 400px;
+    }
+}
+@media (min-width:768px) {
+    .text {
+        width: 340px;
+    }
+}
+@media (min-width:992px) {
+    .new{
+        flex-direction: row-reverse;
+    }
+    .newspic img {
+        width: 220px;
+        margin-bottom: 0;
+    }
+    .text{
+        width: 450px;
+        font-size: 16px;
+    }
+    .allnews {
+        width: 15%;
+        font-size: 16px;
+    }
+    .summery {
+        margin-top: 0;
+    }
+}
+@media (min-width:1200px) {
+    .news{
+        margin-top: 80px;
+    }
+    .new{
+        justify-content: space-evenly;
+    }
+    .text{
+        width: 450px;
+        font-size: 15px;
+    }
+    .newspic img{
+        width: 200px;
+    }
+    .allnews{
+        width: 8%;
+        font-size: 16px;
+    }
+}

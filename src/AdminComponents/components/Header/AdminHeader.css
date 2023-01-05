@@ -1,0 +1,50 @@
+.navbarAdmin{
+    font-family: 'BYekan';
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 3px 10px 1px rgb(164 160 230);
+    border-radius: 0 0 10px 10px;
+}
+.responsiveUserpanel{
+    display: none;
+}
+.hamburgerAdmin{
+    font-size: 25px;
+    color: #0e295a;
+    cursor: pointer;
+}
+.bell{
+    font-size: 25px;
+    animation-name: bell;
+    animation-duration: 0.7s;
+    animation-iteration-count:infinite;
+    color: #999999;
+}
+@keyframes bell {
+    0%{transform: rotateZ(-10deg);}
+    25%{transform: rotateZ(10deg);}
+    50%{transform: rotateZ(-10deg);}
+    75%{transform: rotateZ(10deg);}
+    100%{transform: rotateZ(-10deg);}
+}
+@media (min-width:400px) {
+    .selectAdmin{
+        background-color: #69e6e6;
+    }
+    .responsiveUserpanel{
+    display: block;
+    }
+}
+@media (min-width:768px) {
+    .selectAdmin{
+        background-color: #2d2e2f;
+        color: rgb(165, 162, 162);
+        border-radius: 0 0 5px 5px;
+    }
+    .responsiveUserpanel{
+    display: none;
+    }
+}

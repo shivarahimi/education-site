@@ -1,0 +1,16 @@
+.userDashboard{
+    margin-bottom: 20px;
+}
+.lessonName{
+    font-size: 12px;
+}
+@media (min-width:400px) {
+    .lessonName{
+        font-size: 12px;
+    }
+}
+@media (min-width:576px) {
+    .lessonName{
+        font-size: 16px;
+    }
+}

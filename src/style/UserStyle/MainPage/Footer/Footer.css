@@ -1,0 +1,91 @@
+footer{
+    background-color: #EDF6F5;
+}
+.relation{
+    margin-top: 100px;
+    padding: 40px;
+    font-family: 'BYekan';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.leftLanding,.rightLanding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.onvan{
+    margin-bottom: 17px;
+}
+.addressFooter{
+    display: flex;
+}
+.matn{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.icon{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.copy-right{
+    padding: 10px;
+    font-family: 'BYekan';
+}
+.me{
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+}
+@media (min-width:400px) {
+    footer {
+        margin-top: 60px;
+        padding: 20px;
+    }
+    .leftLanding{
+        margin-bottom: 30px;
+    }
+    .logoFooter img{
+        width: 85%;
+    }
+    .onvan{
+        font-size: 15px;
+    }
+    .matn{
+        font-size: 12px;
+    }
+    .icon{
+        font-size: 17px;
+    }
+}
+@media (min-width:768px) {
+    .leftLanding{
+        margin-bottom: 0;
+    }
+}
+@media (min-width:992px) {
+    .logoFooter img{
+        width: 100%;
+    }
+    .onvan {
+        font-size: 17px;
+        margin-bottom: 17px;
+    }
+    .matn{
+        font-size: 14px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .me{
+        font-size: 14px;
+    }
+}
+@media (min-width:1200px) {
+    footer {
+        margin-top: 100px;
+        padding: 40px;
+    }
+}

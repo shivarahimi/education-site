@@ -1,0 +1,39 @@
+input[type=file]{
+    display: none;
+}
+label{
+    width: 120px;
+    height: 40px;
+    padding: 0 5px 0 5px;
+    background:#14ea3e;
+    color: white;
+    vertical-align: center;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 2%;
+}
+.adminTextarea{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #dbd6d6;
+    transition: 0.5s all ease-in-out;
+}
+.adminTextarea:hover{
+    transform: scale(1.01);
+    border: 1px solid #41AFE6;
+    cursor: pointer;
+}
+.updateInformationAdmin{
+    background-color: #fff;
+    color: #e16123;
+    box-shadow: 1px 2px 5px 1px rgb(226, 226, 231);
+}
+.updateAdmin{
+    background-color: #009378;
+}

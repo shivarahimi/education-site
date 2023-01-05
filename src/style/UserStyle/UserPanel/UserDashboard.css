@@ -1,0 +1,19 @@
+.content{
+    margin-top: 20px;
+    font-family: 'BYekan';
+}
+.profile{
+    box-shadow: 2px 3px 10px 1px #ccc;
+    text-align: right;
+    border-radius: 5px;
+}
+.dashboard{
+    background-color: #1471EA;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+}
+.userDashboard{
+    padding: 30px;
+}
